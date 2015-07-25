@@ -39,8 +39,8 @@ USER xclient
 ENV HOME /home/xclient
 ENV WINEPREFIX /home/xclient/.wine
 ENV WINEARCH win32
-COPY VMware-viclient-all-6.0.0-2502222.exe /home/xclient/
-#RUN curl -SL 'http://vsphereclient.vmware.com/vsphereclient/2/5/0/2/2/2/2/VMware-viclient-all-6.0.0-2502222.exe' -o /home/xclient/viclient.exe
+#COPY VMware-viclient-all-6.0.0-2502222.exe /home/xclient/
+RUN curl -SL 'http://vsphereclient.vmware.com/vsphereclient/2/5/0/2/2/2/2/VMware-viclient-all-6.0.0-2502222.exe' -o /home/xclient/viclient.exe
 # Use xclient's home dir as working dir
 #WORKDIR /home/xclient
 #RUN wine /home/xclient/VMware-viclient-all-6.0.0-2502222.exe 
