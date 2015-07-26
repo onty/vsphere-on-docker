@@ -11,7 +11,7 @@ RUN apt-get update \
         sudo
 
 # Install wine and related packages
-RUN dpkg --add-architecture i386 \
+RUN dpkg --add-architecture amd64 \
         && apt-get update \
         && apt-get install -y --no-install-recommends \
                 wine64 \
