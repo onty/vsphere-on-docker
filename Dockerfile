@@ -1,7 +1,6 @@
 FROM debian:latest
 MAINTAINER Lintang Prasojo <lintang.jp@icloud.com>
 
-#ENV WINE_MONO_VERSION 0.0.8
 USER root
 
 # Install some tools required for creating the image
